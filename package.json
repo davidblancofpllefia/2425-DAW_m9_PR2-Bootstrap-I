@@ -1,0 +1,21 @@
+{
+  "name": "2425-daw_m9_pr2-bootstrap-i-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "vite": "^6.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.81.0"
+  }
+}
