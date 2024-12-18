@@ -6,31 +6,30 @@ body {
   margin-top: 20px;
 }
 
-.titulo {
+.titulo, .subtitulo {
   font-family: "Poppins", sans-serif;
-  font-size: 65.34px;
   font-weight: 700;
-  line-height: 82px;
   text-align: center;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 
-.subtitulo{
-  font-family: 'Poppins', sans-serif;  
-  font-weight: 700;
+.titulo {
+  font-size: 65.34px;
+  line-height: 82px;
+  text-decoration-skip-ink: none;
+}
+
+.subtitulo {
+  font-size: 50.52px; /* Ajustado para responsive */
 }
 
 .custom-button {
   width: 251px;
   height: 56px;
-  padding: 16px 0 0 0;
-  gap: 16px;
+  padding: 16px 0;
   border-radius: 67px 0 0 0;
   background-color: #285E67;
-  opacity: 1;
-  border: none;
   color: white;
+  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -38,191 +37,114 @@ body {
   font-size: 16px;
 }
 
-
 .hoja {
   width: 92.12px;
   height: 82.06px;
-  position: absolute; 
+  position: absolute;
   top: 11.47px;
   left: 278.94px;
-  border-radius: 9px 0px 0px 0px;
-  border: 2px solid #000; 
+  border-radius: 9px 0 0 0;
+  border: 2px solid #000;
 }
+
 .planta {
-  width: 623.5px;
-  height: 578px;
-  gap: 0px; 
-  border-radius: 16px 0px 0px 0px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px 0 0 0;
 }
+
+.icon {
+  width: 52px;
+  height: 52px;
+}
+
 .text-with-icon {
   display: flex;
   flex-direction: column;
-  gap: 15px; 
-
-  .text-item {
-    display: flex;
-    align-items: flex-start; 
-
-    .icon {
-      width: 52px;
-      height: 52px;
-      margin-right: 15px; 
-    }
-
-    p {
-      margin: 0; 
-    }
-  }
+  gap: 15px;
 }
- 
+
+.text-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.text-item .icon {
+  width: 52px;
+  height: 52px;
+  margin-right: 15px;
+}
+
+.text-item p {
+  margin: 0;
+}
+
 .d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
+}
 
-  .me-3 {
-    margin-right: 15px;
-  }
+.me-3 {
+  margin-right: 15px;
+}
 
-  .planta {
-    width: 100%;
-    height: auto;
-  }
-
-  .subtitulo {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 24px;
-  }
-
-  .text-with-icon {
-    display: flex;
-    gap: 30px;
-
-    .text-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-
-      .icon {
-        width: 52px;
-        height: 52px;
-        margin-right: 15px;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-
-    .me-3 {
-      margin-bottom: 20px;
-    }
-
-    .planta {
-      width: 100%;
-      height: auto;
-    }
-
-    .text-with-icon {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .text-item {
-      margin-bottom: 15px;
-    }
-
-    .text-item .icon {
-      width: 40px;
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .subtitulo {
-      font-size: 18px;
-    }
-
-    p {
-      margin-left: 0;
-      margin-right: 0;
-      font-size: 16px;
-    }
-
-    .mx-4 {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
+.mx-4 {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .yoga-img {
   max-width: 100%;
-  height: auto;    
-  object-fit: contain;  
-  max-height: 100%;  
+  height: auto;
+  object-fit: contain;
+  max-height: 100%;
 }
 
 .footer {
-  background-color: #1a4e57; 
+  background-color: #285E67;
   padding: 20px 0;
-  color: #fff;
+  color: white;
+}
 
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.iconoRedes {
+  font-size: 1.5rem;
+  margin-left: 25px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .logo-section {
-    display: flex;
+  .me-3 {
+    margin-bottom: 20px;
+  }
+
+  .text-with-icon {
     align-items: center;
     gap: 10px;
-
-    .logo-circle {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: white;
-    }
-
-    .logo-text {
-      font-size: 18px;
-      font-weight: 500;
-    }
   }
 
-  .social-icons {
-    display: flex;
-    gap: 15px;
-    
-    .social-icon {
-      color: white;
-      font-size: 20px;
-      transition: color 0.3s;
-
-      &:hover {
-        color: #f4f4f4;
-      }
-    }
+  .text-item {
+    margin-bottom: 15px;
   }
 
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    
-    a {
-      color: white;
-      font-size: 16px;
-      text-decoration: none;
-      transition: color 0.3s;
+  .text-item .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
 
-      &:hover {
-        color: #f4f4f4;
-      }
-    }
+  .subtitulo {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
